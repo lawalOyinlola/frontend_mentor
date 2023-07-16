@@ -1,0 +1,141 @@
+/* GENERAL */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+img {
+  width: 32%;
+}
+
+.btn:link, .btn:visited {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  margin-top: 40%;
+  padding: 1.2rem 3.8rem;
+  border-radius: 100px;
+  align-self: start;
+}
+
+.btn:hover, .btn:active {
+  transform: scale(1.1);
+}
+
+.btn-sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+
+/* MAIN */
+
+.content {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.car {
+  max-width: 36rem;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  transition: all 0.6s;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+/* ATTRIBUTION */
+
+.attribution {
+  margin-top: 5rem;
+  color: #333;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover,
+.attribution a:active {
+  text-decoration: none;
+}
+
+
+/* QUERIES */
+/* BELOW 1032px */
+@media (max-width: 64.5em) {
+  html {
+    font-size: 56.25%;
+  }
+/* .content {
+  font-size: 80%;
+} */
+}
+/* BELOW 792px */
+@media (max-width: 49.5em) {
+  html {
+    font-size: 50%;
+  }
+  .btn {
+    padding: 1.2rem 2.4rem;
+  }
+}
+/* BELOW 656px */
+@media (max-width: 41em) {
+ .content {
+  flex-direction: column;
+ }
+
+ .car {
+   padding: 20%;
+  }
+ 
+  .car * {
+    margin: 0;
+  }
+
+}
