@@ -1,8 +1,13 @@
 /* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
-  /* was initially @62.5%(10px).. but layout design was too big */
-  /* 8px */
-  font-size: 50%;
+  /* 1rem = 10px */
+  font-size: 62.5%;
 }
 
 body {
@@ -11,23 +16,24 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;
+  padding: 2rem;
   color: hsla(0, 0%, 100%, 0.75);
   background-color: hsla(0, 0%, 100%, 0.75);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
-  font-size: 3.6rem;
+  font-size: 3.8rem;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
 }
 
 img {
+  display: block;
   width: 32%;
 }
 
@@ -35,8 +41,8 @@ img {
   display: block;
   text-decoration: none;
   background-color: #fff;
-  margin-top: 40%;
-  padding: 1.2rem 3.8rem;
+  margin-top: 8rem;
+  padding: 1.2rem 3.6rem;
   border-radius: 100px;
   align-self: start;
 }
@@ -67,8 +73,8 @@ img {
 }
 
 .car {
-  max-width: 36rem;
-  padding: 7%;
+  max-width: 30rem;
+  padding: 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -110,45 +116,42 @@ img {
 
 
 /* QUERIES */
-/* BELOW 1032px */
-@media (max-width: 64.5em) {
-  /* html {
+/* BELOW 800px */
+@media (max-width: 50em) {
+  html {
     font-size: 56.25%;
-  } */
-/* .content {
-  font-size: 80%;
-} */
-}
-/* BELOW 792px */
-@media (max-width: 49.5em) {
-  /* html {
-    font-size: 50%;
   }
-  .btn {
+  
+  .btn:link, .btn:visited {
     padding: 1.2rem 2.4rem;
-  } */
+}
+}
+
+/* BELOW 656px */
+@media (max-width: 41em) {
+  html {
+   font-size: 50%;
+  }
 }
 
 /* MOBILE */
-/* BELOW 672px */
-@media (max-width: 42em) {
+/* BELOW 576px */
+@media (max-width: 36em) {
+  html {
+    font-size: 62.5%;
+  }
+
  .content {
   flex-direction: column;
  }
- 
- .btn:link, .btn:visited {
-   margin-top: 0.5rem;
-   padding: 1.2rem 3.2rem;
- }
-
- .car * {
-   margin: 0;
- }
 
  .car {
-   padding: 18%;
-  }
+  padding: 4.5rem;
+  max-width: 33rem;
+ }
  
-
-
+ .btn:link, .btn:visited {
+   margin-top: 0;
+   padding: 1.2rem 3.2rem;
+ }
 }
