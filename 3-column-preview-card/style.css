@@ -24,17 +24,17 @@ body {
   align-items: center;
 }
 
-h1 {
+img {
+  display: block;
+  width: 32%;
+}
+
+.heading {
   font-family: "Big Shoulders Display", cursive;
   font-size: 3.8rem;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-}
-
-img {
-  display: block;
-  width: 32%;
 }
 
 .btn:link, .btn:visited {
@@ -79,7 +79,7 @@ img {
   flex-direction: column;
   justify-content: space-around;
   gap: 2rem;
-  transition: all 0.6s;
+  transition: all 0.3s;
 }
 
 .sedan {
@@ -116,7 +116,7 @@ img {
 
 
 /* QUERIES */
-/* BELOW 800px */
+/* BELOW 800px - TABLETS */
 @media (max-width: 50em) {
   html {
     font-size: 56.25%;
@@ -127,15 +127,15 @@ img {
 }
 }
 
-/* BELOW 656px */
-@media (max-width: 41em) {
+/* BELOW 704px - SMALL TABLETS */
+@media (max-width: 44em) {
   html {
    font-size: 50%;
   }
 }
 
 /* MOBILE */
-/* BELOW 576px */
+/* BELOW 576px - MOBILE */
 @media (max-width: 36em) {
   html {
     font-size: 62.5%;
