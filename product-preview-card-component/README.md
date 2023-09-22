@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github sub-repo](https://github.com/lawalOyinlola/frontend_mentor/tree/frontend_mentor/3-column-preview-card)
-- Live Site URL: [Netlify.frm-3-column-preview-card](https://frm-3-column-preview-card.netlify.app/)
+- Live Site URL: [Netlify|frm-perfume-card](https://frm-perfume-card.netlify.app/)
 
 ### Built with
 

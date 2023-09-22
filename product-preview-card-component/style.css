@@ -8,8 +8,8 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
-  /* resized to 6px */
-  font-size: 37.5%;
+  /* resized to 8px */
+  font-size: 50%;
 }
 
 body {
@@ -79,7 +79,7 @@ body {
   overflow: hidden;
   display: flex;
   border-radius: 10px;
-  transform: all 0.3s;
+  transition: all 0.3s;
 }
 
 .images {
@@ -134,7 +134,17 @@ body {
 
 /* QUERIES */
 /* BELOW 656px - MOBILE */
-@media (max-width: 41em) {
+@media (max-width: 38em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 56.25%;
+  }
+
   .content {
     max-width: 37.5rem;
     flex-direction: column;
